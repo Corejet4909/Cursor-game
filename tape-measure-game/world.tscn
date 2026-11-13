@@ -2,12 +2,15 @@
 
 [ext_resource type="PackedScene" uid="uid://bto426ym6cyot" path="res://player.tscn" id="1_fj7yv"]
 [ext_resource type="PackedScene" uid="uid://dufgar5u6e27p" path="res://cursor.tscn" id="2_tlwt5"]
+[ext_resource type="PackedScene" uid="uid://dulqmnm17px4i" path="res://wall.tscn" id="3_tlwt5"]
 
 [node name="World" type="Node2D" unique_id=1541411881]
-scale = Vector2(0.66178, 0.9618111)
 
 [node name="Player" parent="." unique_id=1203810976 instance=ExtResource("1_fj7yv")]
-position = Vector2(331, 415)
+position = Vector2(772.1599, 111.248474)
 
 [node name="Cursor" parent="." unique_id=642792128 instance=ExtResource("2_tlwt5")]
 position = Vector2(941, 103)
+
+[node name="Wall" parent="." unique_id=792740464 instance=ExtResource("3_tlwt5")]
+position = Vector2(781, 363)
