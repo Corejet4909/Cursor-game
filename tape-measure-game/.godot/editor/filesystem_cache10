@@ -1,5 +1,5 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1794691596
+::res://::1794694846
 361f9b4351e4598141377cf83f77e46d-earth-stone.png::CompressedTexture2D::5176718062767640643::1794691173::1794691173::1::::<><><>0<>0<>7484646b68a6d2b99bc98e99d4cd66c6<>res://.godot/imported/361f9b4351e4598141377cf83f77e46d-earth-stone.png-3bbeaec5828c4ea9d23d608b23e8076e.ctex::
 845-8456790_rock-wall-boulder.png::CompressedTexture2D::427375400417154412::1794623853::1794623853::1::::<><><>0<>0<>7bbf0fb801cd33bab6863856ce1ce211<>res://.godot/imported/845-8456790_rock-wall-boulder.png-2c14e2da9ca9a35cf687c9a5e6cc428e.ctex::
 bd79a89165dad5ea91565253a397977a-rock-boulder-illustration.png::CompressedTexture2D::4697485063155511973::1794691173::1794691173::1::::<><><>0<>0<>589cac94b7fb345c40cc03b1a057f450<>res://.godot/imported/bd79a89165dad5ea91565253a397977a-rock-boulder-illustration.png-344b3963871c0f66ae7d738f53290489.ctex::
@@ -10,21 +10,33 @@ brick_wall.tscn::PackedScene::4551914627579854078::1794691173::0::1::::<><><>0<>
 character_body_2d.gd::GDScript::2942082693625828935::1794618036::0::1::::<>CharacterBody2D<><>0<>0<><>::
 cursor.gd::GDScript::8650067760935160766::1794618036::0::1::::Cursor<>StaticBody2D<><>0<>0<><>::
 cursor.tscn::PackedScene::8573726054758257867::1794618036::0::1::::<><><>0<>0<><>::uid://dvifl8gefc047::::res://cursor.gd<>uid://b03wf6wv0f8pm::::res://icon.svg
-game.tscn::PackedScene::5373455606351042432::1794691173::0::1::::<><><>0<>0<><>::uid://c0biksoso7vgr::::res://ground.tscn<>uid://bto426ym6cyot::::res://player.tscn<>uid://dvj7kvbyom8rf::::res://Gravity/anti_gravity.tscn<>uid://b8k5vhvlm5wqw::::res://Gravity/right_gravity.tscn<>uid://c27qgvhm27k2w::::res://rock.tscn<>uid://bfcv06c02ofuv::::res://smallrock.tscn<>uid://b538msogr184a::::res://brick_wall.tscn
+game.tscn::PackedScene::5373455606351042432::1794692288::0::1::::<><><>0<>0<><>::uid://c0biksoso7vgr::::res://ground.tscn<>uid://1jlrxm7th4w1::::res://Screenshot_2026-11-15_at_10.25.58_AM-removebg-preview.png<>uid://bto426ym6cyot::::res://player.tscn<>uid://dvj7kvbyom8rf::::res://Gravity/anti_gravity.tscn<>uid://b8k5vhvlm5wqw::::res://Gravity/right_gravity.tscn<>uid://c27qgvhm27k2w::::res://rock.tscn<>uid://bfcv06c02ofuv::::res://smallrock.tscn<>uid://b538msogr184a::::res://brick_wall.tscn
 grass.png::CompressedTexture2D::2863633942271006345::1794691173::1794691173::1::::<><><>0<>0<>b29382e0f213d8fcec38d89d6da7580f<>res://.godot/imported/grass.png-79cf597cc1adecdff9d12adae9606f9b.ctex::
 ground.tscn::PackedScene::6530131397857645137::1794691173::0::1::::<><><>0<>0<><>::uid://bg2fvrlta5hr2::::res://grass.png
 images.jpg::CompressedTexture2D::3100526722330678112::1794623853::1794623853::1::::<><><>0<>0<>328cfe12efffe91a20b4897193acc33f<>res://.godot/imported/images.jpg-828aec76970545e387c8e5ec74aa0b53.ctex::
+options_menu.tscn::PackedScene::474987369683259543::1794694843::0::1::::<><><>0<>0<><>::uid://dxw51tukuc6aq::::res://el's work/el's assets/redone sky.png<>uid://m8n77a1tkkx5::::res://el's work/el's assets/start button.png<>uid://cjhigqd5ll7f4::::res://el's work/el's assets/startbuttonpressed.png
 player.gd::GDScript::5557421254159791254::1794618036::0::1::::<>RigidBody2D<><>0<>0<><>::
 player.tscn::PackedScene::3750720676484131663::1794691173::0::1::::<><><>0<>0<><>::uid://gda2s3e1a6cm::::res://845-8456790_rock-wall-boulder.png
 player_backup.tscn::PackedScene::858588764854001515::1794624102::0::1::::<><><>0<>0<><>::uid://gda2s3e1a6cm::::res://845-8456790_rock-wall-boulder.png
 rigid_body_2d.tscn::PackedScene::250676634039767631::1794691173::0::1::::<><><>0<>0<><>::uid://cf0v14oxassed::::res://361f9b4351e4598141377cf83f77e46d-earth-stone.png
 rock.tscn::PackedScene::6734983534777242436::1794691173::0::1::::<><><>0<>0<><>::uid://cf0v14oxassed::::res://361f9b4351e4598141377cf83f77e46d-earth-stone.png
-Screenshot_2026-11-15_at_10.25.58_AM-removebg-preview.png::CompressedTexture2D::1844188807846533986::1794691596::1794691597::1::::<><><>0<>0<>4f149e138192e31030af350ae9a8ae98<>res://.godot/imported/Screenshot_2026-11-15_at_10.25.58_AM-removebg-preview.png-4311faffa9b241be0aea4007de79c904.ctex::
+Screenshot_2026-11-15_at_10.25.58_AM-removebg-preview.png::CompressedTexture2D::1844188807846533986::1794691609::1794691597::1::::<><><>0<>0<>4f149e138192e31030af350ae9a8ae98<>res://.godot/imported/Screenshot_2026-11-15_at_10.25.58_AM-removebg-preview.png-4311faffa9b241be0aea4007de79c904.ctex::
 smallrock.tscn::PackedScene::2742814991573087377::1794691173::0::1::::<><><>0<>0<><>::uid://b76q5l64drp30::::res://bd79a89165dad5ea91565253a397977a-rock-boulder-illustration.png
 top-view-of-metal-cube-isolated-on-a-transparent-background-png.png::CompressedTexture2D::4525316789026033614::1794691173::1794691173::1::::<><><>0<>0<>4b8dc06e75c21af2bfe2c8afadc0e318<>res://.godot/imported/top-view-of-metal-cube-isolated-on-a-transparent-background-png.png-c19b7d325e9ccb8d57766c7fb497ca5f.ctex::
 wall.tscn::PackedScene::8586740683111636342::1794691173::0::1::::<><><>0<>0<><>::uid://gda2s3e1a6cm::::res://845-8456790_rock-wall-boulder.png
 wallbackup.tscn::PackedScene::2688723216507599983::1794624102::0::1::::<><><>0<>0<><>::uid://b03wf6wv0f8pm::::res://icon.svg
 world.tscn::PackedScene::5035109922813095244::1794691173::0::1::::<><><>0<>0<><>::uid://bto426ym6cyot::::res://player.tscn<>uid://c0biksoso7vgr::::res://ground.tscn
+::res://el's work/::1794694833
+cutscene.tscn::PackedScene::2510282906241289433::1794692276::0::1::::<><><>0<>0<><>::
+::res://el's work/el's assets/::1794695304
+Boulder.png::CompressedTexture2D::3018837467543217081::1794695304::1794695305::1::::<><><>0<>0<>4221bbd4426e3ec3787b59efad09cc61<>res://.godot/imported/Boulder.png-24f178f005956d883d9e58fcb63d5e64.ctex::
+Bunny.png::CompressedTexture2D::8194655889078090945::1794695304::1794695305::1::::<><><>0<>0<>ad1506fbb57005790dd42998976ae0aa<>res://.godot/imported/Bunny.png-65b75e9d336d7ca0b4e46da20b0ea1d8.ctex::
+carrot.png::CompressedTexture2D::1975022782886786565::1794693063::1794693071::1::::<><><>0<>0<>000d14a6e646f79adff64718efbfd30f<>res://.godot/imported/carrot.png-8c5e7630fb7912b0c2b9d4a09f3fe76f.ctex::
+carrotdark.png::CompressedTexture2D::1523670859969027931::1794694184::1794694234::1::::<><><>0<>0<>5d36449c34bd6c7d66b919eac6ccdeeb<>res://.godot/imported/carrotdark.png-5ae5bf2a7fb6f0a235e4509c1e8fc534.ctex::
+carrotlight.png::CompressedTexture2D::3417524375540162996::1794694193::1794694234::1::::<><><>0<>0<>6f441df38120c73369931cf821100395<>res://.godot/imported/carrotlight.png-fa6ba7335281ea36e0072234c5153101.ctex::
+redone sky.png::CompressedTexture2D::8820890735088820764::1794693586::1794693629::1::::<><><>0<>0<>11d01b98ab8677247107ba8309227e04<>res://.godot/imported/redone sky.png-97536907783b04bb5eeeb80f89d891f5.ctex::
+start button.png::CompressedTexture2D::911238737805603348::1794694717::1794694719::1::::<><><>0<>0<>a8b5f4d7424d4e43da6a3f6a73623881<>res://.godot/imported/start button.png-6626a2f55fdfd1b65c1256bf85391b69.ctex::
+startbuttonpressed.png::CompressedTexture2D::5419488901498720591::1794694828::1794694830::1::::<><><>0<>0<>21bc4b23c4910594eed7ba133b46f9f0<>res://.godot/imported/startbuttonpressed.png-14adf18cf4b1f47a44ccf9e4035d799e.ctex::
 ::res://Gravity/::1794691440
 anti_gravity.tscn::PackedScene::8653769074616923723::1794691173::0::1::::<><><>0<>0<><>::
 left_gravity.tscn::PackedScene::972311068489691315::1794691173::0::1::::<><><>0<>0<><>::

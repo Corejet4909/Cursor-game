@@ -1,6 +1,7 @@
 [gd_scene format=4 uid="uid://cis7a8itt8yea"]
 
 [ext_resource type="PackedScene" uid="uid://c0biksoso7vgr" path="res://ground.tscn" id="1_e2o6t"]
+[ext_resource type="Texture2D" uid="uid://1jlrxm7th4w1" path="res://Screenshot_2026-11-15_at_10.25.58_AM-removebg-preview.png" id="1_j5wjh"]
 [ext_resource type="PackedScene" uid="uid://bto426ym6cyot" path="res://player.tscn" id="2_feb5d"]
 [ext_resource type="PackedScene" uid="uid://dvj7kvbyom8rf" path="res://Gravity/anti_gravity.tscn" id="3_feb5d"]
 [ext_resource type="PackedScene" uid="uid://b8k5vhvlm5wqw" path="res://Gravity/right_gravity.tscn" id="4_fc0e3"]
@@ -8,20 +9,13 @@
 [ext_resource type="PackedScene" uid="uid://bfcv06c02ofuv" path="res://smallrock.tscn" id="6_ryrav"]
 [ext_resource type="PackedScene" uid="uid://b538msogr184a" path="res://brick_wall.tscn" id="7_eow3j"]
 
-[sub_resource type="Gradient" id="Gradient_fc0e3"]
-offsets = PackedFloat32Array(0.92771083)
-colors = PackedColorArray(1.92523e-06, 0.7425144, 0.785527, 1)
-
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_oeacd"]
-gradient = SubResource("Gradient_fc0e3")
-
 [node name="Game" type="Node2D" unique_id=697551592]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=2016199260]
 visible = false
 position = Vector2(7055.9995, -2119)
 scale = Vector2(246.8828, 148.64842)
-texture = SubResource("GradientTexture2D_oeacd")
+texture = ExtResource("1_j5wjh")
 
 [node name="ground" parent="." unique_id=1670320616 instance=ExtResource("1_e2o6t")]
 position = Vector2(2, -67)

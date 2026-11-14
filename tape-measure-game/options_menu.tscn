@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://g1c8ckms22qt"]
+
+[ext_resource type="Texture2D" uid="uid://dxw51tukuc6aq" path="res://el's work/el's assets/redone sky.png" id="1_4gmlt"]
+[ext_resource type="Texture2D" uid="uid://m8n77a1tkkx5" path="res://el's work/el's assets/start button.png" id="2_4gmlt"]
+[ext_resource type="Texture2D" uid="uid://cjhigqd5ll7f4" path="res://el's work/el's assets/startbuttonpressed.png" id="3_ogda5"]
+
+[sub_resource type="GDScript" id="GDScript_f1vgq"]
+script/source = "extends Node2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+
+
+func _on_start_pressed() -> void:
+	get_tree().change_scene_to_file(\"res://cutscene.tscn\") # Replace with function body.
+"
+
+[node name="options-menu" type="Node2D" unique_id=1145911456]
+script = SubResource("GDScript_f1vgq")
+
+[node name="sky background" type="Sprite2D" parent="." unique_id=560667752]
+position = Vector2(965.9999, 539)
+scale = Vector2(1.60134, 0.90893763)
+texture = ExtResource("1_4gmlt")
+
+[node name="start" type="TextureButton" parent="." unique_id=2016610629]
+offset_left = 429.0
+offset_top = 306.0
+offset_right = 1385.0
+offset_bottom = 1262.0
+texture_normal = ExtResource("2_4gmlt")
+texture_pressed = ExtResource("3_ogda5")
+
+[connection signal="pressed" from="start" to="." method="_on_start_pressed"]
