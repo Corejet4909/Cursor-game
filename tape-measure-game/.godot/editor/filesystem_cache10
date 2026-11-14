@@ -1,0 +1,12 @@
+63f7b34db8d8cdea90c76aacccf841ec
+::res://::1794622833
+845-8456790_rock-wall-boulder.png::CompressedTexture2D::427375400417154412::1794622833::1794622833::1::::<><><>0<>0<>7bbf0fb801cd33bab6863856ce1ce211<>res://.godot/imported/845-8456790_rock-wall-boulder.png-2c14e2da9ca9a35cf687c9a5e6cc428e.ctex::
+character_body_2d.gd::GDScript::2942082693625828935::1794615931::0::1::::<>CharacterBody2D<><>0<>0<><>::
+cursor.gd::GDScript::8650067760935160766::1794615178::0::1::::Cursor<>StaticBody2D<><>0<>0<><>::
+cursor.tscn::PackedScene::8573726054758257867::1794616980::0::1::::<><><>0<>0<><>::uid://dvifl8gefc047::::res://cursor.gd<>uid://b03wf6wv0f8pm::::res://icon.svg
+icon.svg::CompressedTexture2D::4200290717765310182::1794608707::1794608718::1::::<><><>0<>0<>d1cb127a7e8d0be606b032a37658a4de<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+images.jpg::CompressedTexture2D::3100526722330678112::1794622697::1794622697::1::::<><><>0<>0<>328cfe12efffe91a20b4897193acc33f<>res://.godot/imported/images.jpg-828aec76970545e387c8e5ec74aa0b53.ctex::
+player.gd::GDScript::5557421254159791254::1794616489::0::1::::<>RigidBody2D<><>0<>0<><>::
+player.tscn::PackedScene::3750720676484131663::1794622639::0::1::::<><><>0<>0<><>::uid://b03wf6wv0f8pm::::res://icon.svg
+wall.tscn::PackedScene::8586740683111636342::1794614895::0::1::::<><><>0<>0<><>::uid://b03wf6wv0f8pm::::res://icon.svg
+world.tscn::PackedScene::5035109922813095244::1794622571::0::1::::<><><>0<>0<><>::uid://bto426ym6cyot::::res://player.tscn<>uid://dulqmnm17px4i::::res://wall.tscn<>uid://bh6fw38avmupj::::res://character_body_2d.gd
