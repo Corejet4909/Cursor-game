@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bto426ym6cyot"]
 
-[ext_resource type="Texture2D" uid="uid://b03wf6wv0f8pm" path="res://icon.svg" id="1_4flbx"]
+[ext_resource type="Texture2D" uid="uid://gda2s3e1a6cm" path="res://845-8456790_rock-wall-boulder.png" id="1_4flbx"]
 
 [sub_resource type="GDScript" id="GDScript_4flbx"]
 script/source = "extends RigidBody2D
@@ -10,11 +10,11 @@ var is_on_floor: bool = false
 func _physics_process(delta: float) -> void:
 	is_on_floor = floor_ray.is_colliding()
 	if Input.is_action_just_pressed(\"Left\"):
-		apply_torque_impulse(80000)
+		apply_torque_impulse(15000000)
 	if Input.is_action_just_pressed(\"Right\"):
-		apply_torque_impulse(-80000)
-	if Input.is_action_just_pressed(\"Up\") && is_on_floor == false:
-		apply_impulse(Vector2(0,-1000))
+		apply_torque_impulse(-15000000)
+	if Input.is_action_just_pressed(\"Up\") && is_on_floor == true:
+		apply_impulse(Vector2(0,-50000))
 		
 
 
@@ -22,20 +22,22 @@ func _physics_process(delta: float) -> void:
 	
 "
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_4flbx"]
-size = Vector2(132, 132)
+[sub_resource type="CircleShape2D" id="CircleShape2D_4flbx"]
+radius = 66.27216
 
 [node name="Player" type="RigidBody2D" unique_id=1968629028]
+mass = 58.25
 script = SubResource("GDScript_4flbx")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=582844957]
+scale = Vector2(0.13, 0.13)
 texture = ExtResource("1_4flbx")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1773290693]
-shape = SubResource("RectangleShape2D_4flbx")
+shape = SubResource("CircleShape2D_4flbx")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=130503955]
 position_smoothing_enabled = true
 
-[node name="RayCast2D" type="RayCast2D" parent="." unique_id=1946591084]
-target_position = Vector2(0, 80)
+[node name="RayCast2D" type="RayCast2D" parent="." unique_id=555061780]
+target_position = Vector2(-1, 88)

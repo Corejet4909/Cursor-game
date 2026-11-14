@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://cd0br3wlyucrc"]
 
 [ext_resource type="PackedScene" uid="uid://bto426ym6cyot" path="res://player.tscn" id="1_fj7yv"]
+[ext_resource type="PackedScene" uid="uid://bn03wqt6mucoc" path="res://Block.tscn" id="3_aqk2v"]
 [ext_resource type="PackedScene" uid="uid://dulqmnm17px4i" path="res://wall.tscn" id="3_tlwt5"]
-[ext_resource type="Script" uid="uid://bh6fw38avmupj" path="res://character_body_2d.gd" id="4_aqk2v"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_tlwt5"]
 distance = -529.0
@@ -14,9 +14,6 @@ distance = -529.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=614530243]
 position = Vector2(782, 14)
 shape = SubResource("WorldBoundaryShape2D_tlwt5")
-
-[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1497703686]
-script = ExtResource("4_aqk2v")
 
 [node name="StaticBody2D" parent="." unique_id=1574711072 instance=ExtResource("3_tlwt5")]
 position = Vector2(812, 337)
@@ -34,3 +31,27 @@ scale = Vector2(1, 5.72)
 [node name="Player" parent="." unique_id=1968629028 instance=ExtResource("1_fj7yv")]
 position = Vector2(605, -171)
 scale = Vector2(1.0051539, 1)
+
+[node name="StaticBody2D4" parent="." unique_id=1682691017 instance=ExtResource("3_tlwt5")]
+position = Vector2(2087, 195)
+rotation = 0.8313666
+scale = Vector2(-7.139293, -0.67129457)
+
+[node name="StaticBody2D5" parent="." unique_id=902071375 instance=ExtResource("3_tlwt5")]
+position = Vector2(3856.0002, 539)
+scale = Vector2(23.96, 1)
+
+[node name="StaticBody2D6" parent="." unique_id=2012198128 instance=ExtResource("3_aqk2v")]
+position = Vector2(3690, 189)
+
+[node name="StaticBody2D7" parent="." unique_id=1325077745 instance=ExtResource("3_aqk2v")]
+position = Vector2(3463, 400)
+
+[node name="StaticBody2D8" parent="." unique_id=1168738747 instance=ExtResource("3_aqk2v")]
+position = Vector2(4115, 394)
+
+[node name="StaticBody2D9" parent="." unique_id=221702553 instance=ExtResource("3_aqk2v")]
+position = Vector2(3472, 224)
+
+[node name="StaticBody2D10" parent="." unique_id=2090522312 instance=ExtResource("3_aqk2v")]
+position = Vector2(3463, 2)
