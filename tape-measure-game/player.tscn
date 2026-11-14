@@ -1,18 +1,41 @@
 [gd_scene format=3 uid="uid://bto426ym6cyot"]
 
 [ext_resource type="Texture2D" uid="uid://b03wf6wv0f8pm" path="res://icon.svg" id="1_4flbx"]
-[ext_resource type="Script" uid="uid://clgb6fawia5r3" path="res://player.gd" id="1_onrkg"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_onrkg"]
-radius = 63.007935
+[sub_resource type="GDScript" id="GDScript_4flbx"]
+script/source = "extends RigidBody2D
+@onready var floor_ray: RayCast2D = $RayCast2D
+var is_on_floor: bool = false
 
-[node name="Player" type="RigidBody2D" unique_id=1458846928]
-mass = 1.067
-can_sleep = false
-script = ExtResource("1_onrkg")
+func _physics_process(delta: float) -> void:
+	is_on_floor = floor_ray.is_colliding()
+	if Input.is_action_just_pressed(\"Left\"):
+		apply_torque_impulse(80000)
+	if Input.is_action_just_pressed(\"Right\"):
+		apply_torque_impulse(-80000)
+	if Input.is_action_just_pressed(\"Up\") && is_on_floor == false:
+		apply_impulse(Vector2(0,-1000))
+		
+
+
+
+	
+"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4flbx"]
+size = Vector2(132, 132)
+
+[node name="Player" type="RigidBody2D" unique_id=1968629028]
+script = SubResource("GDScript_4flbx")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=582844957]
 texture = ExtResource("1_4flbx")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1773290693]
-shape = SubResource("CircleShape2D_onrkg")
+shape = SubResource("RectangleShape2D_4flbx")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=130503955]
+position_smoothing_enabled = true
+
+[node name="RayCast2D" type="RayCast2D" parent="." unique_id=1946591084]
+target_position = Vector2(0, 80)
