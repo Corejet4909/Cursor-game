@@ -2,6 +2,9 @@
 
 [ext_resource type="Texture2D" uid="uid://gda2s3e1a6cm" path="res://845-8456790_rock-wall-boulder.png" id="1_4flbx"]
 
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_e2o6t"]
+rough = true
+
 [sub_resource type="GDScript" id="GDScript_4flbx"]
 script/source = "extends RigidBody2D
 @onready var floor_ray: RayCast2D = $RayCast2D
@@ -10,12 +13,12 @@ var is_on_floor: bool = false
 func _physics_process(delta: float) -> void:
 	is_on_floor = floor_ray.is_colliding()
 	if Input.is_action_just_pressed(\"Left\"):
-		apply_torque_impulse(15000000)
+		apply_torque_impulse(5000000)
 	if Input.is_action_just_pressed(\"Right\"):
-		apply_torque_impulse(-15000000)
+		apply_torque_impulse(-5000000)
 	if Input.is_action_just_pressed(\"Up\") && is_on_floor == true:
 		apply_impulse(Vector2(0,-50000))
-		
+	$RayCast2D.global_rotation = 0
 
 
 
@@ -27,6 +30,8 @@ radius = 66.27216
 
 [node name="Player" type="RigidBody2D" unique_id=1968629028]
 mass = 58.25
+physics_material_override = SubResource("PhysicsMaterial_e2o6t")
+linear_damp = -1.0
 script = SubResource("GDScript_4flbx")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=582844957]
@@ -40,4 +45,4 @@ shape = SubResource("CircleShape2D_4flbx")
 position_smoothing_enabled = true
 
 [node name="RayCast2D" type="RayCast2D" parent="." unique_id=555061780]
-target_position = Vector2(-1, 88)
+target_position = Vector2(0, 72)

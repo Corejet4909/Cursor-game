@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://dvj7kvbyom8rf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_myf5j"]
+
+[node name="Anti Gravity" type="Area2D" unique_id=1009027294]
+gravity_space_override = 3
+gravity_point_center = Vector2(0, -1)
+gravity_direction = Vector2(0, -1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=104508041]
+shape = SubResource("RectangleShape2D_myf5j")

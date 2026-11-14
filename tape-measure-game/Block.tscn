@@ -1,14 +1,16 @@
 [gd_scene format=3 uid="uid://bn03wqt6mucoc"]
 
-[ext_resource type="Texture2D" uid="uid://b03wf6wv0f8pm" path="res://icon.svg" id="1_2wby2"]
+[ext_resource type="Texture2D" uid="uid://b5qdkofdq1ttm" path="res://top-view-of-metal-cube-isolated-on-a-transparent-background-png.png" id="1_2wby2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_y4f30"]
 size = Vector2(128, 128)
 
 [node name="block" type="RigidBody2D" unique_id=2012198128]
-scale = Vector2(0.499341, 0.5)
+mass = 10.0
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=375619000]
+position = Vector2(4.7683716e-07, 0)
+scale = Vector2(0.50500005, 0.50500005)
 texture = ExtResource("1_2wby2")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=181412468]

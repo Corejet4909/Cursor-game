@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://bfcv06c02ofuv"]
+
+[ext_resource type="Texture2D" uid="uid://b76q5l64drp30" path="res://bd79a89165dad5ea91565253a397977a-rock-boulder-illustration.png" id="1_8obxh"]
+
+[node name="Smallrock" type="RigidBody2D" unique_id=828968526]
+mass = 4.175
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1615801956]
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("1_8obxh")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=335031469]
+polygon = PackedVector2Array(-13, -24, -5, -22, 1, -22, 7, -20, 15, -18, 24, -6, 29, 8, 29, 16, 28, 22, 21, 24, -18, 23, -22, 23, -28, 20, -29, 6, -28, -1, -26, -15)
