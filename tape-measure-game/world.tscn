@@ -3,14 +3,39 @@
 [ext_resource type="PackedScene" uid="uid://bto426ym6cyot" path="res://player.tscn" id="1_fj7yv"]
 [ext_resource type="PackedScene" uid="uid://dufgar5u6e27p" path="res://cursor.tscn" id="2_tlwt5"]
 [ext_resource type="PackedScene" uid="uid://dulqmnm17px4i" path="res://wall.tscn" id="3_tlwt5"]
+[ext_resource type="Script" uid="uid://bh6fw38avmupj" path="res://character_body_2d.gd" id="4_aqk2v"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_036b0"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_aqk2v"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_tlwt5"]
+distance = -529.0
 
 [node name="World" type="Node2D" unique_id=1541411881]
 
 [node name="Player" parent="." unique_id=1203810976 instance=ExtResource("1_fj7yv")]
 position = Vector2(772.1599, 111.248474)
+collision_layer = 3
+collision_mask = 3
+mass = 0.1
+physics_material_override = SubResource("PhysicsMaterial_036b0")
 
 [node name="Cursor" parent="." unique_id=642792128 instance=ExtResource("2_tlwt5")]
 position = Vector2(941, 103)
+collision_layer = 2
+collision_mask = 2
+physics_material_override = SubResource("PhysicsMaterial_aqk2v")
 
 [node name="Wall" parent="." unique_id=792740464 instance=ExtResource("3_tlwt5")]
 position = Vector2(781, 363)
+disable_mode = 2
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1227409754]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=614530243]
+position = Vector2(782, 14)
+shape = SubResource("WorldBoundaryShape2D_tlwt5")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1497703686]
+script = ExtResource("4_aqk2v")
