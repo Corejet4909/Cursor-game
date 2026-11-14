@@ -1,3 +1,5 @@
+TextureRect
+ColorRect
 TextureButton
 Button
 Sprite2D
@@ -11,5 +13,3 @@ RayCast2D
 Camera2D
 CharacterBody2D
 Polygon2D
-StaticBody2D
-Line2D

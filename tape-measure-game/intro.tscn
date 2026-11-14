@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://dtg16xtnedeya"]
+
+[ext_resource type="Texture2D" uid="uid://c3mx7xmebvslr" path="res://el's work/el's assets/scene A.png" id="1_7a8ye"]
+[ext_resource type="Texture2D" uid="uid://d0jhjwnv4wxo" path="res://el's work/el's assets/scene B.png" id="2_0a7ni"]
+[ext_resource type="Texture2D" uid="uid://bqu3edtklxlia" path="res://el's work/el's assets/scene C.png" id="3_y72e6"]
+
+[sub_resource type="GDScript" id="GDScript_f1vgq"]
+script/source = "extends Control
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
+
+[node name="intro" type="Control" unique_id=1791509965]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = SubResource("GDScript_f1vgq")
+
+[node name="A" type="TextureRect" parent="." unique_id=1098389203]
+layout_mode = 0
+offset_left = -105.0
+offset_top = -84.0
+offset_right = 2714.0
+offset_bottom = 1640.0
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("1_7a8ye")
+
+[node name="B" type="TextureRect" parent="." unique_id=1334368129]
+layout_mode = 0
+offset_left = -127.0
+offset_top = -95.0
+offset_right = 2692.0
+offset_bottom = 1629.0
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("2_0a7ni")
+
+[node name="C" type="TextureRect" parent="." unique_id=125048990]
+layout_mode = 0
+offset_left = -75.99999
+offset_top = -98.0
+offset_right = 2743.0
+offset_bottom = 1626.0
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("3_y72e6")
