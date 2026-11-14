@@ -18,7 +18,7 @@ distance = -529.0
 position = Vector2(772.1599, 111.248474)
 collision_layer = 3
 collision_mask = 3
-mass = 0.1
+mass = 4.228
 physics_material_override = SubResource("PhysicsMaterial_036b0")
 
 [node name="Cursor" parent="." unique_id=642792128 instance=ExtResource("2_tlwt5")]

@@ -13,6 +13,7 @@ script = ExtResource("1_fsq4c")
 shape = SubResource("CircleShape2D_5l68f")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1177294615]
+visible = false
 rotation = -3.1415927
 scale = Vector2(0.15237385, -0.2706087)
 texture = ExtResource("2_5l68f")
