@@ -1,5 +1,9 @@
-TextureRect
 ColorRect
+CanvasLayer
+Camera2D
+VideoStreamPlayer
+AnimationPlayer
+TextureRect
 TextureButton
 Button
 Sprite2D
@@ -8,8 +12,3 @@ RigidBody2D
 CollisionPolygon2D
 CanvasModulate
 Area2D
-TileMapLayer
-RayCast2D
-Camera2D
-CharacterBody2D
-Polygon2D

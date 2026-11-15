@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dtg16xtnedeya"]
+
+[ext_resource type="VideoStream" uid="uid://dednj0tf1aqpk" path="res://el's work/el's assets/starting movie.ogv" id="1_s2ta7"]
+[ext_resource type="PackedScene" uid="uid://3af43nw8sr41" path="res://fade.tscn" id="2_ayt76"]
+
+[node name="intro" type="Node2D" unique_id=61005353]
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=1204384548]
+offset_left = -1078.0
+offset_top = -598.0
+offset_right = 1082.0
+offset_bottom = 606.0
+stream = ExtResource("1_s2ta7")
+autoplay = true
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=306628903]
+
+[node name="Fade" parent="." unique_id=531412533 instance=ExtResource("2_ayt76")]
+
+[connection signal="finished" from="VideoStreamPlayer" to="Fade" method="_on_video_stream_player_finished"]

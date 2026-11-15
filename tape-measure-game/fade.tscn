@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://3af43nw8sr41"]
+
+[sub_resource type="GDScript" id="GDScript_g7pi3"]
+script/source = "extends CanvasLayer
+@onready var color_rect: ColorRect = $ColorRect
+#instantiate scene
+const options_menu = preload(\"res://el's_work/options_menu.tscn\")
+var instance = options_menu 
+
+var current_level : CanvasLayer = null
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	color_rect.color.a = 0.0
+	#current_level = $\"../VideoStreamPlayer\"
+
+func fade(target_alpha: float, duration: float = 1.0):
+	var tween = create_tween()
+	tween.tween_property(color_rect, \"color:a\", target_alpha, duration)
+	return tween
+
+
+func _on_video_stream_player_finished() -> void:
+	await fade(1.0, 1.5).finished
+	print(\"Faded Out\")
+	
+	get_tree().change_scene_to_file(\"res://el's_work/options_menu.tscn\")
+
+	#current_level.queue_free()
+	await fade(0.0, 1.5).finished
+	print(\"Faded In\")
+"
+
+[node name="fade" type="CanvasLayer" unique_id=531412533]
+script = SubResource("GDScript_g7pi3")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1992609722]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
