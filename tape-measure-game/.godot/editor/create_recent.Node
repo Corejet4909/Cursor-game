@@ -1,9 +1,10 @@
-Control
-Button
-CanvasLayer
+Node2D
 Sprite2D
 CollisionShape2D
 RigidBody2D
+Control
+Button
+CanvasLayer
 CollisionPolygon2D
 CanvasModulate
 Area2D
@@ -11,5 +12,3 @@ TileMapLayer
 RayCast2D
 Camera2D
 CharacterBody2D
-Polygon2D
-StaticBody2D
