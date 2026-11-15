@@ -1,10 +1,7 @@
+res://options_menu.tscn
 res://game.tscn
-<<<<<<< HEAD
 res://intro.tscn
 res://el's work/el's assets/intro movie.ogv
 res://fade.tscn
 res://el's work/options_menu.tscn
-=======
-res://player.tscn
-res://cat.tscn
->>>>>>> 295f42ee39a18724c02ed1d8ab57557c38cd9d4a
+res://el's work/intro.tscn
