@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ColorRect
 CanvasLayer
 Camera2D
@@ -6,9 +7,22 @@ AnimationPlayer
 TextureRect
 TextureButton
 Button
+=======
+Node2D
+>>>>>>> 295f42ee39a18724c02ed1d8ab57557c38cd9d4a
 Sprite2D
 CollisionShape2D
 RigidBody2D
+Control
+Button
+CanvasLayer
 CollisionPolygon2D
 CanvasModulate
 Area2D
+<<<<<<< HEAD
+=======
+TileMapLayer
+RayCast2D
+Camera2D
+CharacterBody2D
+>>>>>>> 295f42ee39a18724c02ed1d8ab57557c38cd9d4a
