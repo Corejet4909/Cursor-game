@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://d03q3x6c6do28" path="res://download.png" id="5_eow3j"]
 [ext_resource type="PackedScene" uid="uid://c27qgvhm27k2w" path="res://rock.tscn" id="6_ryrav"]
 [ext_resource type="PackedScene" uid="uid://btu5uqmvniv1n" path="res://cat.tscn" id="8_j5wjh"]
+[ext_resource type="AudioStream" uid="uid://d382y2n7ymqfx" path="res://the_boulders_tyranny.mp3" id="9_vef74"]
 
 [sub_resource type="Gradient" id="Gradient_fc0e3"]
 offsets = PackedFloat32Array(0.92771083)
@@ -82,7 +83,7 @@ tile_map_data = PackedByteArray("AAD//wsAAAAAAAIAAAAAAAsAAAAAAAIAAAABAAsAAAABAAM
 metadata/_edit_lock_ = true
 
 [node name="Player" parent="." unique_id=1968629028 instance=ExtResource("2_feb5d")]
-position = Vector2(27009, 7313)
+position = Vector2(690, 208)
 
 [node name="Anti Gravity2" parent="." unique_id=1185249919 instance=ExtResource("3_feb5d")]
 position = Vector2(21149, 7070)
@@ -3429,5 +3430,12 @@ position = Vector2(42512, 14697)
 
 [node name="Cat1095" parent="Cats" unique_id=115497583 instance=ExtResource("8_j5wjh")]
 position = Vector2(42412, 14717)
+
+[node name="TheBouldersTyranny" type="AudioStreamPlayer2D" parent="." unique_id=1884150073]
+position = Vector2(769, 73)
+stream = ExtResource("9_vef74")
+autoplay = true
+max_distance = 120605.0
+parameters/looping = true
 
 [connection signal="pressed" from="CanvasLayer/Button" to="CanvasLayer/Button" method="_on_pressed"]

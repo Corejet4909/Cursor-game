@@ -3,7 +3,22 @@
 [ext_resource type="VideoStream" uid="uid://dednj0tf1aqpk" path="res://el's work/el's assets/starting movie.ogv" id="1_s2ta7"]
 [ext_resource type="PackedScene" uid="uid://3af43nw8sr41" path="res://fade.tscn" id="2_ayt76"]
 
+[sub_resource type="GDScript" id="GDScript_pm8ll"]
+script/source = "extends Node2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
+
 [node name="intro" type="Node2D" unique_id=61005353]
+script = SubResource("GDScript_pm8ll")
 
 [node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=1204384548]
 offset_left = -1078.0
