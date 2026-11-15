@@ -4,14 +4,15 @@
 script/source = "extends CanvasLayer
 @onready var color_rect: ColorRect = $ColorRect
 #instantiate scene
-const options_menu = preload(\"res://el's_work/options_menu.tscn\")
-var instance = options_menu 
+const options_menu = preload(\"res://options_menu.tscn\")
+# var instance = options_menu.instantiate()
 
 var current_level : CanvasLayer = null
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	color_rect.color.a = 0.0
+# 	add_child(instance)
 	#current_level = $\"../VideoStreamPlayer\"
 
 func fade(target_alpha: float, duration: float = 1.0):
@@ -24,7 +25,7 @@ func _on_video_stream_player_finished() -> void:
 	await fade(1.0, 1.5).finished
 	print(\"Faded Out\")
 	
-	get_tree().change_scene_to_file(\"res://el's_work/options_menu.tscn\")
+	get_tree().change_scene_to_file(\"res://options_menu.tscn\")
 
 	#current_level.queue_free()
 	await fade(0.0, 1.5).finished
