@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://btu5uqmvniv1n"]
+
+[ext_resource type="Texture2D" uid="uid://ct6u4jweh7qad" path="res://cat.png" id="1_hcucf"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_52fj1"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_myf5j"]
+radius = 25.0
+
+[node name="Cat" type="RigidBody2D" unique_id=139614287]
+physics_material_override = SubResource("PhysicsMaterial_52fj1")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=915023423]
+position = Vector2(3.000001, -0.9999995)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_hcucf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1299642363]
+position = Vector2(-3, -4)
+shape = SubResource("CircleShape2D_myf5j")

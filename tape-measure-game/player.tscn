@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bto426ym6cyot"]
 
-[ext_resource type="Texture2D" uid="uid://gda2s3e1a6cm" path="res://845-8456790_rock-wall-boulder.png" id="1_4flbx"]
+[ext_resource type="Texture2D" uid="uid://cx7sjccceoefe" path="res://Screenshot_2026-11-15_at_10.44.40_AM-removebg-preview.png" id="1_4flbx"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_e2o6t"]
 rough = true
@@ -19,10 +19,14 @@ func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed(\"Up\") && is_on_floor == true:
 		apply_impulse(Vector2(0,-50000))
 	$RayCast2D.global_rotation = 0
-
+	
 
 
 	
+
+
+func _on_button_pressed() -> void:
+	pass # Replace with function body.
 "
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4flbx"]
@@ -35,8 +39,9 @@ linear_damp = -1.0
 script = SubResource("GDScript_4flbx")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=582844957]
-scale = Vector2(0.13, 0.13)
+scale = Vector2(0.35, 0.35)
 texture = ExtResource("1_4flbx")
+flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1773290693]
 shape = SubResource("CircleShape2D_4flbx")
@@ -45,4 +50,5 @@ shape = SubResource("CircleShape2D_4flbx")
 position_smoothing_enabled = true
 
 [node name="RayCast2D" type="RayCast2D" parent="." unique_id=555061780]
-target_position = Vector2(0, 72)
+scale = Vector2(1.0070938, 1)
+target_position = Vector2(0, 95)
