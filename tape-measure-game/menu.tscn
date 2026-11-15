@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://cpxmrlcaqawj7"]
+
+[ext_resource type="AudioStream" path="res://a_boulderlike_bunny.mp3" id="1_lti8b"]
+[ext_resource type="Texture2D" uid="uid://d03q3x6c6do28" path="res://download.png" id="2_ouk20"]
+
+[sub_resource type="GDScript" id="GDScript_ouk20"]
+script/source = "extends Node2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+
+
+func _on_button_pressed() -> void:
+	get_tree().change_scene_to_file(\"res://game.tscn\")
+"
+
+[node name="Menu" type="Node2D" unique_id=379481984]
+script = SubResource("GDScript_ouk20")
+
+[node name="ABoulderlikeBunny" type="AudioStreamPlayer2D" parent="." unique_id=1094325011]
+position = Vector2(675, 411)
+stream = ExtResource("1_lti8b")
+autoplay = true
+parameters/looping = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=513637940]
+scale = Vector2(0.2, 0.2)
+transform = Transform2D(0.2, 0, 0, 0.2, 0, 0)
+
+[node name="Button" type="Button" parent="CanvasLayer" unique_id=1259200986]
+offset_left = 2689.9998
+offset_top = 1319.9999
+offset_right = 3306.9998
+offset_bottom = 1936.9999
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0)
+icon = ExtResource("2_ouk20")
+flat = true
+
+[connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]

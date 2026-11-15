@@ -46,13 +46,13 @@ func _on_pressed() -> void:
 [node name="Backgrounds" type="Node2D" parent="." unique_id=1686633954]
 
 [node name="Sprite2D5" type="Sprite2D" parent="Backgrounds" unique_id=262888079]
-position = Vector2(28764, 6650.0005)
-scale = Vector2(63.593803, 73.65624)
+position = Vector2(28755, 6650.0005)
+scale = Vector2(63.875027, 73.65624)
 texture = SubResource("GradientTexture2D_oeacd")
 
 [node name="Sprite2D2" type="Sprite2D" parent="Backgrounds" unique_id=1216212876]
-position = Vector2(20922.75, 6786.2505)
-scale = Vector2(185.53908, 182.7422)
+position = Vector2(20916.75, 6786.2505)
+scale = Vector2(185.35158, 182.7422)
 texture = SubResource("GradientTexture2D_myf5j")
 
 [node name="Sprite2D4" type="Sprite2D" parent="Backgrounds" unique_id=1880752930]
@@ -89,7 +89,7 @@ position = Vector2(21149, 7070)
 scale = Vector2(192.92107, 14.133064)
 
 [node name="Right Gravity" parent="." unique_id=1009027294 instance=ExtResource("4_fc0e3")]
-position = Vector2(18402, 7232)
+position = Vector2(18425, 7257)
 scale = Vector2(469.08572, -17.76747)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=701655420]
